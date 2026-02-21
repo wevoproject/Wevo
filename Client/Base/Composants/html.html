@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Alerts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f3f4f6;
+    }
+
+    .alert-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .alert {
+      display: flex;
+      align-items: center;
+      padding: 10px 14px;
+      border-left: 5px solid;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.25s ease;
+    }
+
+    .alert:hover {
+      transform: scale(1.04);
+    }
+
+    .alert svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    /* SUCCESS */
+    .success {
+      background: #bbf7d0;
+      border-color: #16a34a;
+      color: #14532d;
+    }
+    .success:hover {
+      background: #86efac;
+    }
+
+    /* INFO */
+    .info {
+      background: #bfdbfe;
+      border-color: #2563eb;
+      color: #1e3a8a;
+    }
+    .info:hover {
+      background: #93c5fd;
+    }
+
+    /* WARNING (adouci) */
+    .warning {
+      background: #fde68a;
+      border-color: #d97706;
+      color: #7c2d12;
+    }
+    .warning:hover {
+      background: #fcd34d;
+    }
+
+    /* ERROR */
+    .error {
+      background: #fecaca;
+      border-color: #dc2626;
+      color: #7f1d1d;
+    }
+    .error:hover {
+      background: #fca5a5;
+    }
+  </style>
+</head>
+<body>
+
+<div class="alert-container">
+
+  <div class="alert success">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="9"></circle>
+      <line x1="12" y1="10.5" x2="12" y2="16"></line>
+      <circle cx="12" cy="7.3" r="0.6"></circle>
+    </svg>
+    Success – Everything went smoothly!
+  </div>
+
+  <div class="alert info">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="9"></circle>
+      <line x1="12" y1="10.5" x2="12" y2="16"></line>
+      <circle cx="12" cy="7.3" r="0.6"></circle>
+    </svg>
+    Info – This is some information for you.
+  </div>
+
+  <div class="alert warning">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="9"></circle>
+      <line x1="12" y1="10.5" x2="12" y2="16"></line>
+      <circle cx="12" cy="7.3" r="0.6"></circle>
+    </svg>
+    Warning – Be careful with this next step.
+  </div>
+
+  <div class="alert error">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="9"></circle>
+      <line x1="12" y1="10.5" x2="12" y2="16"></line>
+      <circle cx="12" cy="7.3" r="0.6"></circle>
+    </svg>
+    Error – Something went wrong.
+  </div>
+
+</div>
+
+</body>
+</html>

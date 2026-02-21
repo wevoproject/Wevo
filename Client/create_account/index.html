@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wevo - Create account</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../logo.webp" type="image/webp" />
+  </head>
+
+  <body>
+    <header class="top-bar">
+      <button class="icon-btn" id="burgerBtn">
+        <img
+          src="../Icons/Closed_rolling_menu_icon.png"
+          class="icon-accent"
+          alt="Menu"
+          id="burgerIcon"
+          data-closed="../Icons/Closed_rolling_menu_icon.png"
+          data-open="../Icons/Opened_rolling_menu_icon.png"
+        />
+      </button>
+
+      <h1 class="app-title">Wevo</h1>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="notifBtn">
+          <img
+            src="../Icons/Notifications_icon.png"
+            class="icon-accent"
+            alt="Notifications"
+          />
+          <span class="notif-dot"></span>
+        </button>
+
+        <a href="../account_settings/index.html" class="icon-btn">
+          <img src="../Icons/Account_icon.png" class="icon-accent" alt="Account" />
+        </a>
+      </div>
+    </header>
+
+    <aside class="side-menu" id="mainMenu">
+      <a href="../orga/index.html">Organiser</a>
+      <a href="../feed/index.html">Feed</a>
+      <a href="../pass/index.html">Pass</a>
+      <a href="../games/index.html">Games</a>
+      <a href="../contacts/index.html">Contacts</a>
+    </aside>
+
+    <aside class="side-menu right" id="notifMenu">
+      <a href="../messages/index.html">New messages</a>
+      <a href="../invitations/index.html">Invitations received</a>
+      <a href="../snotifications/index.html">See all</a>
+    </aside>
+
+  <main class="content">
+    <form class="account-form">
+      <h2>Create an account</h2>
+
+      <label>
+        Pseudo
+        <input type="text" placeholder="abcde" required />
+      </label>
+
+      <label>
+        Name
+        <input type="text" placeholder="Me" required />
+      </label>
+
+      <label>
+        Server
+        <input type="text" placeholder="xxxx.xxxx.xxxx.xxxx:xxxxx" required />
+      </label>
+
+      <label>
+        Account creation ID
+        <input type="text" placeholder="123456" required />
+      </label>
+
+      <label>
+        ID
+        <input type="text" placeholder="me.me" required />
+      </label>
+
+      <label>
+        Password
+        <input type="password" placeholder="password123" required />
+      </label>
+
+      <button type="submit" class="submit-btn">Create</button>
+    </form>
+  </main>
+
+
+    <nav class="bottom-nav">
+      <a href="../home/index.html" class="nav-btn active">
+        <img src="../Icons/Home_icon.png" class="icon-secondary" alt="Home" />
+      </a>
+      <a href="../calls/index.html" class="nav-btn">
+        <img src="../Icons/Call_icon.png" class="icon-secondary" alt="Call" />
+      </a>
+      <a href="../messages/index.html" class="nav-btn">
+        <img src="../Icons/Chat_icon.png" class="icon-primary" alt="Chat" />
+      </a>
+      <a href="../wallet/index.html" class="nav-btn">
+        <img src="../Icons/Wallet_icon.png" class="icon-secondary" alt="Wallet" />
+      </a>
+      <a href="../groups/index.html" class="nav-btn">
+        <img src="../Icons/Group_icon.png" class="icon-secondary" alt="Groups" />
+      </a>
+    </nav>
+
+    <div class="ui-alert-container" id="alerts"></div>
+
+    <script src="script_1.js" defer></script>
+  </body>
+</html>
